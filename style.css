@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color:rgb(4, 136, 136);
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(51, 51, 51);
+    margin-top: 1rem;
+    /* padding-left: 100px; */
+    /* margin-left: 80px; */
+    
+}
+#NewTask{
+    display: flex;
+}
+#newsubmit{
+    margin-top: 80px;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background:none;
+    /* margin-left: 50px; */
+    /* margin-top: 100px; */
+    /* margin-right: 50px; */
+
+}
+
+#newtask{
+    flex: 1 1 0%;
+    background-color: #f7cda8;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 80px;
+}
+#newtask::placeholder{
+    opacity: .5;
+}
+#newsubmit{
+    color: rgb(243, 120, 161);
+    font-size: 1.3rem;
+    font-weight: 950;
+    font-style: oblique;
+    background-image: linear-gradient(to right, rgb(241, 5, 123) , rgb(53, 1, 44));
+
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+#newsubmit:hover{
+    opacity: .5;
+}
+#newsubmit:active{
+    opacity: .8;
+}
+section{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+div{
+    /* display: flex; */
+    display: block;
+	justify-content: space-between;
+	background-color: rgb(218, 212, 212);
+	padding: .7rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    /* width: 100%; */
+
+}
+
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(114, 8, 70);
+    margin-bottom: 1rem;
+}
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	/* padding: 1rem; */
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+ .task .content .text {
+	color: rgb(12, 12, 11);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: rgb(116, 5, 42);
+    font-weight: 80px;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+    /* margin-bottom: 50px; */
+    margin-left: 70px;
+	font-size: 1.125rem;
+	font-weight: 700;
+    font-style:initial;
+	text-transform: uppercase;
+	transition: 0.4s;
+    color: #0a0809;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 3px;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+
+
+.task .actions .delete {
+	color: crimson;
+} 
